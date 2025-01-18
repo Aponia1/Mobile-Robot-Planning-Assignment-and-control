@@ -191,7 +191,7 @@ double Astarpath::getHeu(MappingNodePtr node1, MappingNodePtr node2) {
   double heu;
   double tie_breaker;
   heu=(node1->coord-node2->coord).norm();
-  tie_breaker=rand() / (double) RAND_MAX*8;
+  tie_breaker=rand() / (double) RAND_MAX*10;
   heu+=tie_breaker;
   return heu;
 
